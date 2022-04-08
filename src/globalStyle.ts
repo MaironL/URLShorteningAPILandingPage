@@ -147,11 +147,11 @@ p {
 #root {
   display: grid;
   grid:  auto / auto;
-  /* grid-template-areas: Example
-  "navbar" 
+  grid-template-areas:
+  "Header" 
   "main"
   "footer"
-  ; */
+  ;
   min-height: 100%;
   background-color: var(--clr-bg-2);
 }
