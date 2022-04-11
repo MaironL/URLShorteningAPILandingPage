@@ -11,18 +11,18 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Cyan: hsl(180, 66%, 49%)
-- Dark Violet: hsl(257, 27%, 26%)
+- Cyan: hsl(180, 66%, 49%) **Para los botones, detalles verdes, etc.**
+- Dark Violet: hsl(257, 27%, 26%) **El violeta que se usa en algunos fondos**
 
 ### Secondary
 
-- Red: hsl(0, 87%, 67%)
+- Red: hsl(0, 87%, 67%) **Para los errores, alertas, etc.**
 
 ### Neutral
 
-- Gray: hsl(0, 0%, 75%)
-- Grayish Violet: hsl(257, 7%, 63%)
-- Very Dark Blue: hsl(255, 11%, 22%)
+- Gray: hsl(0, 0%, 75%) **Para los fondos, etc.**
+- Grayish Violet: hsl(257, 7%, 63%) **Para el texto**
+- Very Dark Blue: hsl(255, 11%, 22%) **fondo footer**
 - Very Dark Violet: hsl(260, 8%, 14%)
 
 ## Typography

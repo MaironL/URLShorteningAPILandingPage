@@ -4,17 +4,18 @@ import URLShortening from 'infrastructure/components/URLShortening/URLShortening
 import Description from 'infrastructure/components/Description/Description';
 import CallToAction from 'infrastructure/components/CallToAction/CallToAction';
 import Footer from 'infrastructure/components/Footer/Footer';
+import * as S from './Home.styles';
 
 const Home = () => {
   return (
     <>
       <Header />
-      <main>
+      <S.MainContainer>
         <Hero />
         <URLShortening />
         <Description />
         <CallToAction />
-      </main>
+      </S.MainContainer>
       <Footer />
     </>
   );

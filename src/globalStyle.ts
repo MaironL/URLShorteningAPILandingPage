@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 :root {
-
+ 
 /*
 * =============== 
 * Variables
@@ -47,7 +47,7 @@ export const GlobalStyle = createGlobalStyle`
 --clr-white: #fff;
 --clr-black: #222;
 /*
-* Trinkes 
+* Trinkets 
 */
 --transition: all 0.3s linear;
 --spacing: 0.1rem;
@@ -105,6 +105,7 @@ ul {
 
 a {
   text-decoration: none;
+  font-weight: 400;
 }
 
 h1,
@@ -112,7 +113,6 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
@@ -146,26 +146,18 @@ p {
 
 #root {
   display: grid;
-  grid:  auto / auto;
-  grid-template-areas:
-  "Header" 
-  "main"
-  "footer"
-  ;
+  grid: 
+  [row1-start] "header" 85px [row1-end]   
+  [row2-start] "main" auto [row2-end]
+  [row3-start] "footer" auto [row3-end]
+  / auto ;
   min-height: 100%;
   background-color: var(--clr-bg-2);
 }
 `;
 
-export const Container = styled.div`
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1920px;
-  align-items: center;
-
-  @media screen and (min-width: 900px) {
-    width: 95vw;
-  }
+export const InnerContainer = styled.div`
+  width: min(88%, 1120px);
 `;
 
 export default GlobalStyle;
