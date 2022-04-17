@@ -54,6 +54,11 @@ export const HeaderNavLink = styled(Link)`
   font-weight: 700;
   font-size: 16px;
   color: hsl(257, 7%, 63%);
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: hsl(255, 11%, 22%);
+  }
 `;
 
 export const HeaderRightContainer = styled.div`
@@ -83,6 +88,11 @@ export const LoginButton = styled.button`
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 16px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: hsl(255, 11%, 22%);
+    }
   }
 `;
 
@@ -101,5 +111,10 @@ export const SignupButton = styled.button`
     border-radius: 30px;
     background-color: hsl(180, 66%, 49%);
     margin-left: 40px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: hsl(180, 66%, 69%);
+    }
   }
 `;

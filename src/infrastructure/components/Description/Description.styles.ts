@@ -12,11 +12,6 @@ export const Description = styled.section`
 export const DescriptionInnerContainer = styled(InnerContainer)`
   display: flex;
   flex-direction: column;
-  margin-top: 168px;
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 90px;
-  }
 `;
 
 export const DescriptionPresentation = styled.div`
@@ -53,6 +48,7 @@ export const DescriptionCardsContainer = styled.div`
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 180px;
   }
 `;
 

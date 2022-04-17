@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import working from 'infrastructure/assets/illustration-working.svg';
 import { InnerContainer } from 'globalStyle';
 
 export const Hero = styled.section`
@@ -115,6 +114,7 @@ export const HeroDescription = styled.p`
 `;
 
 export const HeroButton = styled.button`
+  cursor: pointer;
   display: block;
   margin: 30px auto;
   padding: 14px 40px;
@@ -126,6 +126,11 @@ export const HeroButton = styled.button`
   font-weight: 700;
   font-size: 19px;
   background-color: hsl(180, 66%, 49%);
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: hsl(180, 66%, 69%);
+  }
 
   @media screen and (min-width: 900px) {
     margin: 25px 0;

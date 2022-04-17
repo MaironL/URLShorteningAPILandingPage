@@ -17,11 +17,13 @@ export const CallToAction = styled.section`
 
   @media screen and (min-width: 600px) {
     background-image: url(${BgBoostD});
+    height: 250px;
   }
 `;
 
 export const CallToActionTitle = styled.h2`
   font-family: 'Poppins';
+  padding-top: 20px;
   font-weight: 700;
   letter-spacing: -1px;
   color: white;
@@ -29,6 +31,7 @@ export const CallToActionTitle = styled.h2`
 `;
 
 export const CallToActionButton = styled.button`
+  cursor: pointer;
   display: block;
   margin: 10px auto;
   padding: 14px 40px;
@@ -40,4 +43,9 @@ export const CallToActionButton = styled.button`
   font-weight: 700;
   font-size: 19px;
   background-color: hsl(180, 66%, 49%);
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: hsl(180, 66%, 69%);
+  }
 `;

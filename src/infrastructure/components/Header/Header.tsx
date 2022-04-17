@@ -1,7 +1,11 @@
 import * as S from './Header.styles';
 import logo from 'infrastructure/assets/logo.svg';
+import DropDownNav from '../DropDownNav/DropDownNav';
+import useModalShow from './useModalShow';
 
 const Header = () => {
+  const { Modal, showModal } = useModalShow();
+
   return (
     <S.Header>
       <S.HeaderInnerContainer>
@@ -24,8 +28,9 @@ const Header = () => {
         <S.HeaderRightContainer>
           <S.LoginButton>Login</S.LoginButton>
           <S.SignupButton>Sign Up</S.SignupButton>
-          <S.DropDownButton />
+          <S.DropDownButton onClick={showModal} />
         </S.HeaderRightContainer>
+        <DropDownNav Modalref={Modal} />
       </S.HeaderInnerContainer>
     </S.Header>
   );
