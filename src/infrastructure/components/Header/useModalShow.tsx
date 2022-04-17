@@ -16,14 +16,6 @@ const useModalShow = () => {
     }
   };
 
-  const handleResize = () => {
-    setWindowSize(window.innerWidth);
-    if (windowSize >= 899) {
-      //@ts-ignore
-      Modal.current.close();
-    }
-  };
-
   useEffect(() => {
     document.addEventListener('click', handleClickOutside);
     return () => {
@@ -32,6 +24,14 @@ const useModalShow = () => {
   }, []);
 
   useEffect(() => {
+    const handleResize = () => {
+      setWindowSize(window.innerWidth);
+      if (windowSize >= 899) {
+        //@ts-ignore
+        Modal.current.close();
+      }
+    };
+
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
