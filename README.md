@@ -1,6 +1,6 @@
 # Frontend Mentor - Blogr landing page solution
 
-This is a solution to the [URL shortening API landing page]().
+This is a solution to the [URL shortening API landing page](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G).
 
 ## Table of contents
 
@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Go to Frontend Mentor solution]()
-- Live Site URL: [Go to live example ]()
+- Solution URL: [Go to Frontend Mentor solution](https://www.frontendmentor.io/solutions/react-typescript-styled-components-url-shortening-app-rkk8He5Ec)
+- Live Site URL: [Go to live example ](https://link-shortener-ml.netlify.app/)
 
 ## My process
 
