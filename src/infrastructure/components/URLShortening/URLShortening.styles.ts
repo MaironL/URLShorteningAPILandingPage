@@ -11,6 +11,17 @@ export const URLShortening = styled.section`
   background-color: #f0f1f6;
 `;
 
+export const SemanticHeading = styled.h2`
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  visibility: hidden;
+`;
+
 export const URLShorteninForm = styled.form`
   position: relative;
   top: -80px;

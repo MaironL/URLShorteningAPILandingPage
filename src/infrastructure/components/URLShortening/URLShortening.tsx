@@ -10,6 +10,7 @@ const URLshortening = () => {
 
   return (
     <S.URLShortening>
+      <S.SemanticHeading>URL Shortenin Form</S.SemanticHeading>
       <S.URLShorteninForm onSubmit={handleSubmit}>
         <S.InputContainer>
           <S.URLShorteningInput
