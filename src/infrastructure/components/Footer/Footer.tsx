@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <S.Footer>
       <S.FooterInner>
-        <S.FooterLogo src={logo} />
+        <S.FooterLogo src={logo} alt='url-shortening-logo' />
         <S.FooterContent>
           <S.FooterCol>
             <S.FooterColTitle>Features</S.FooterColTitle>

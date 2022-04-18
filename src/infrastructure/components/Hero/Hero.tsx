@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <S.Hero>
       <S.HeroInnerContainer>
-        <S.HeroImage src={working} />
+        <S.HeroImage src={working} alt='working illustration' />
         <S.HeroContent>
           <S.HeroTitle>More than just shorter links</S.HeroTitle>
           <S.HeroDescription>

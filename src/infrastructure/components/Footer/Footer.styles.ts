@@ -65,7 +65,7 @@ export const FooterCol = styled.div`
   }
 `;
 
-export const FooterColTitle = styled.h4`
+export const FooterColTitle = styled.span`
   font-family: 'Poppins';
   font-weight: 500;
   letter-spacing: 0px;

@@ -6,9 +6,14 @@ const useForm = () => {
     link: string;
     shortLink: string;
   }
+  const getlocalStorage = () => {
+    const localState = localStorage.getItem('linksList');
+    return localState !== null && JSON.parse(localState);
+  };
+
+  const [linksList, setLinksList] = useState<ILinksList[]>(getlocalStorage() || []);
   const [values, setValues] = useState({ link: '' });
   const [errors, setErrors] = useState({ link: '' });
-  const [linksList, setLinksList] = useState<ILinksList[]>([]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -18,7 +23,7 @@ const useForm = () => {
         `${process.env.REACT_APP_API_URI}shorten?url=${values.link}`
       );
       const { original_link, short_link } = response.data.result;
-      setLinksList((prevState) => [
+      await setLinksList((prevState) => [
         ...prevState,
         { link: original_link, shortLink: short_link },
       ]);
@@ -33,6 +38,10 @@ const useForm = () => {
   };
 
   const [disableSubmit, setDisableSubmit] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem('linksList', JSON.stringify(linksList));
+  }, [linksList]);
 
   useEffect(() => {
     setErrors(values.link === '' ? { link: 'Please add a link' } : { link: '' });
