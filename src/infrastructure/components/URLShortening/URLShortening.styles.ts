@@ -44,7 +44,7 @@ export const URLShorteningInput = styled.input`
   font-weight: 500;
   color: hsl(257, 7%, 63%);
   font-size: 18px;
-  padding: 18px;
+  padding: 12px 18px;
   width: 100%;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -68,6 +68,10 @@ export const URLShorteningInput = styled.input`
   }
 
   @media screen and (min-width: 600px) {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 900px) {
     margin-bottom: 0px;
   }
 `;
@@ -115,13 +119,18 @@ export const InputContainer = styled.div`
 `;
 
 export const ErrorMessage = styled.span`
-  bottom: -50%;
+  bottom: -4%;
   position: absolute;
   font-family: 'Poppins';
   font-weight: 500;
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   color: #fb5e60;
   display: none;
   transition: all 0.3s ease-in-out;
+
+  @media screen and (min-width: 900px) {
+    bottom: -50%;
+    font-size: 18px;
+  }
 `;
